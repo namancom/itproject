@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="quiz.js"></script>
+</head>
+<style>
+    body{
+    font-family:'Open sans',sans-serif;
+    background: -webkit-linear-gradient(to left,rgb(231, 222, 222),rgb(233, 227, 227) );
+    background: linear-gradient(to left, #0b0b0b, #e7e4e4);
+}
+</style>
+<body>
+    <center>
+        <h1>QUIZ</h1>
+    </center>
+    <form onsubmit="form()">
+        <section style="width:70%; background-origin: padding-box;">
+        <p>1.What is the largest planet in our solar system?<br>
+            <input type="radio" value="saturn" name="a">saturn<br>
+            <input type="radio" value="jupiter" name="a">jupiter<br>
+            <input type="radio" value="mars" name="a">mars<br>
+            <input type="radio" value="neptune" name="a">neptune<br>
+
+        <p id="abc"></p>
+        </p>
+        <p id="b">2.Which planet in our solar system has massive rings that are easily visible with a small
+            telescope?<br>
+            <input type="radio" value="saturn" name="b">saturn<br>
+            <input type="radio" value="mercury" name="b">mercury<br>
+            <input type="radio" value="earth" name="b">earth<br>
+            <input type="radio" value="neptune" name="b">neptune<br>
+        <p id="bcd"></p>
+        </p>
+        <p id="c">3.Did you know that there is a planet that spins on its side? Which planet is it?<br>
+            <input type="radio" value="venus" name="c">venus<br>
+            <input type="radio" value="jupiter" name="c">jupiter<br>
+            <input type="radio" value="uranus" name="c">uranus<br>
+            <input type="radio" value="neptune" name="c">neptune<br>
+        <p id="acd"></p>
+        </p>
+        <p id="d">4.During the day this planet gets hot enough to melt lead, but at night the temperature drops to
+            -290°F?<br>
+            <input type="radio" value="mars" name="d">mars<br>
+            <input type="radio" value="mercury" name="d">mercury<br>
+            <input type="radio" value="saturn" name="d">saturn<br>
+            <input type="radio" value="neptune" name="d">neptune<br>
+        <p id="ok"></p>
+        </p>
+        <button onclick="submitAnswer()">Submit Answer</button>
+    </form>
+    <h1 id="score"></h1>
+</section>
+</body>
+
+</html>
